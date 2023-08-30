@@ -10,7 +10,7 @@ import contaTerminal.clientes.Clientes;
 
 public class Main {
     private static Scanner scanner=new Scanner(System.in);
-     
+    private static ArrayList<Clientes> bancoClientes = new ArrayList<>();
     
     
 
@@ -18,9 +18,9 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("hello World");
         try {
-            ArrayList<Clientes> bancoClientes = new ArrayList<>();
+            
             Menu();
-            bancoClientes.add(0, null);
+           
             // Scanner input = new Scanner(System.in);
             // System.out.println("insira Seu Saldo:");
             // double saldo = input.nextDouble();
@@ -50,7 +50,7 @@ public class Main {
 
                 switch (escolha) {
                     case 1:
-                        System.out.println("Você escolheu a opção 1.");
+                        CriarCliente();
                         break;
                     case 2:
                         System.out.println("Você escolheu a opção 2.");
@@ -75,13 +75,16 @@ public class Main {
 
     public static void exibirMenu() {
         System.out.println("==== Menu ====");
-        System.out.println("1. Opção 1");
+        System.out.println("1 adicionar Cliente ");
         System.out.println("2. Opção 2");
         System.out.println("3. Opção 3");
         System.out.println("0. Encerrar");
         System.out.print("Escolha uma opção: ");
     }
     public static void CriarCliente() {
+        try {
+            
+        
         // private String nome;
         // private String agencia;
         // private String numero;
@@ -95,10 +98,17 @@ public class Main {
         System.out.println("digite o saldo:");
         double saldo =scanner.nextDouble();
      Clientes cliente=   new Clientes(nome, agencia, conta, saldo);
-     
-     String mensagem = String.format("cliente s% criado Com sucesso", cliente.getNome(), cliente.getAgencia(), cliente.getNumero(), cliente.getSaldo());
+      boolean adicionado=bancoClientes.add(cliente);
+    //  String mensagem = String.format("cliente s% criado Com sucesso", cliente.getNome(), cliente.getAgencia(), cliente.getNumero(), cliente.getSaldo());
+    //  System.out.println(mensagem);
+     System.out.println("bancoClientes =>");
+     System.out.println(bancoClientes.toArray());
+    } catch (Exception e) {
+        System.out.println(e);
+            // TODO: handle exception
+        }
 
-System.out.println(mensagem);
+
     }
     
 }
