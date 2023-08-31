@@ -34,4 +34,4 @@ Contribuições são bem-vindas! Se você quiser melhorar este projeto, siga est
 5. Abra um Pull Request descrevendo as alterações propostas.
 
 ---
-Desenvolvido por [Arthur Heneique](https://github.com/Arthur-H15/)
+Desenvolvido por [Arthur Henrique](https://github.com/Arthur-H15/)
