@@ -49,11 +49,8 @@ public class Main {
                     case 2:
                         listarClientes();
                         break;
-                    case 3:
-                        System.out.println("Você escolheu a opção 3.");
-                        break;
                     case 0:
-                        System.out.println("Encerrando o programa.");
+                        System.out.println("Sair.");
                         break;
                     default:
                         System.out.println("Opção inválida. Escolha novamente.");
@@ -70,7 +67,7 @@ public class Main {
         System.out.println("==== Menu ====");
         System.out.println("1 adicionar Cliente ");
         System.out.println("2.clientes cadastrados");
-        System.out.println("0. Encerrar");
+        System.out.println("0. Sair ");
         System.out.print("Escolha uma opção: ");
     }
 
@@ -90,9 +87,9 @@ public class Main {
             System.out.println("digite o saldo:");
             double saldo = scanner.nextDouble();
             Clientes cliente = new Clientes(nome, agencia, conta, saldo);
-            if(!bancoClientes.stream().filter(m-> m.getNumero()==cliente.getNumero()).findFirst().isEmpty()){
-                throw new ParametroInvalido("conta ja cadastrada");
-            };
+            // if(!bancoClientes.stream().filter(m-> m.getNumero()==cliente.getNumero()).findFirst().isEmpty()){
+            //     throw new ParametroInvalido("conta ja cadastrada");
+            // };
             boolean adicionado = bancoClientes.add(cliente);
             if (!adicionado)
                 throw new ParametroInvalido("error ao criar usuario");
