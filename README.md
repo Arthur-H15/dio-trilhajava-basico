@@ -1,22 +1,37 @@
 # dio-trilhajava-basico
-# Sistema de Cadastro de Clientes em Java
+📋 Sistema de Cadastro de Clientes em Java
 
-Este é um simples sistema de cadastro de Clientes desenvolvido em Java. A aplicação permite que você cadastre novos usuários e liste os usuários cadastrados.
+Este repositório contém um sistema de cadastro de clientes desenvolvido em Java, com melhorias adicionais. Agora, você pode criar novos clientes e listar os cadastrados, além de termos feito verificações extras nos inputs.
 
-## Funcionalidades
+🚀 Funcionalidades:
 
-- Cadastro de Novo Usuário: Permite o cadastro de novos usuários com informações como nome, sobrenome, e-mail e idade.
-- Listagem de Usuários Cadastrados: Exibe a lista de todos os usuários cadastrados, incluindo detalhes como nome completo, e-mail e idade.
+- **Cadastro de Clientes:** Crie novos clientes com informações detalhadas, como nome, sobrenome, e-mail e idade.
+- **Listagem de Clientes:** Veja a lista completa de clientes cadastrados.
 
-## Instruções de Uso
+🔧 Instruções:
 
-1. Clone o repositório para o seu computador usando o seguinte comando:
+1. **Clonar Repositório:** Clone este repositório para sua máquina:
+
 git clone https://github.com/Arthur-H15/dio-trilhajava-basico.git
 
-3. Execute a aplicação:
+2. **Compilar Código:** Navegue até o diretório e compile o código-fonte Java:
+javac Main.java
+
+
+3. **Executar Aplicação:** Execute a aplicação:
+
 java Main
 
-4. Siga as instruções exibidas no menu para cadastrar novos usuários ou listar os usuários cadastrados.
+4. **Menu Interativo:** Siga o menu para criar ou listar clientes.
+
+🔍 Novidades:
+
+- **Menu Interativo:** Adicionamos um menu amigável para melhorar a experiência.
+- **Verificações de Inputs:** Implementamos verificações extras para garantir a validade dos dados inseridos.
+
+📝 Requisitos:
+
+- Java JDK instalado
 
 ## Requisitos
 
